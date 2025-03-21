@@ -69,10 +69,9 @@ namespace Assignment_MVC
             ////}); 
             #endregion
 
-            app.MapAreaControllerRoute(
+            app.MapControllerRoute(
 
                 name:"default",
-                areaName:"default",
                 pattern:"/{Controller=Home}/{Action=Index}",
                 defaults: new { Controller = "Home" , Action ="Index"}
 
